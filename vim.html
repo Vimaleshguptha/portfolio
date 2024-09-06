@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <ul id="sidemenu">
+                <a href="#home" style="--i:1">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                <a href="#skills" style="--i:3">Skills</a>
+                <a href="#project" style="--i:4">Portfolio</a>
+                <a href="#contact" style="--i:5">Contact</a>
+                <i class='bx bx-x' onclick="closemenu()"></i>
+            </ul>
+            <i class='bx bx-menu' onclick="openmenu()"></i>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home">
+            <div class="home-content animate-on-scroll">
+                <h3>Hello, I am</h3>
+                <h1>Vimalesh Guptha</h1>
+                <h3>And I'm a <span class="text">Tech Enthusiastic</span></h3>
+                <div class="home-sci">
+                    <a href="https://www.linkedin.com/in/g-vimalesh-guptha" style="--i:6"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Vimaleshguptha" style="--i:7"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:gadamsettyvimalesh9@gmail.com" style="--i:8"><i class='bx bx-envelope'></i></a>
+                </div>
+                <a href="#about" class="btn-box">More About Me</a>
+            </div>
+            <div class="homeimg" id="home1">
+                <img src="profile pic.jpg">
+            </div>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-col-1">
+            <div class="about-img">
+                <img src="dp.jpg">
+            </div>
+        </div>
+        <div class="about-col-2">
+            <div class="about-text animate-on-scroll">
+                <h2>About <span>Me</span></h2>
+                <h4>Tech Enthusiastic & Research Intern @IIIT H</h4>
+                <p>
+                    I'm G. Vimalesh Guptha, a student at <strong>Vasavi College of Engineering</strong>, pursuing a Bachelor's degree in Information Technology. Currently, I'm also a <strong>Research Intern</strong> at IIIT Hyderabad in the Drone + Cybersecurity domain.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')" data-tab="Education">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')" data-tab="Experience">Experience</p>
+                    <p class="tab-links" onclick="opentab('Skills')" data-tab="Skills">Skills</p>
+                    <p class="tab-links" onclick="opentab('Achievements')" data-tab="Achievements">Achievements</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li>Vasavi College Of Engineering — Bachelor of Engineering in Information Technology (2021 - Present) CGPA: 8.97/10</li>
+                        <li>Narayana Junior College — Intermediate (2019 - 2021) 971/1000</li>
+                        <li>National High School — SSC (2019) 10/10</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li>Research Intern — IIIT Hyderabad (Present)</li>
+                        <li>Working in the Drone + Cybersecurity domain focusing on security vulnerabilities in UAVs.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Skills">
+                    <div class="skill">
+                        <div class="container1" id="skills">
+                            <div class="Technical-bars">
+                                <div class="bar">
+                                    <i style="color:#c95d2e" class='bx bxl-html5'></i>
+                                    <div class="info"><span>HTML</span></div>
+                                    <div class="progress-line html"><span></span></div>
+                                </div>
+                                <div class="bar">
+                                    <i style="color:#147bbc" class='bx bxl-css3'></i>
+                                    <div class="info"><span>CSS</span></div>
+                                    <div class="progress-line css"><span></span></div>
+                                </div>
+                                <div class="bar">
+                                    <i style="color:#b0bc1e" class='bx bxl-javascript'></i>
+                                    <div class="info"><span>JavaScript</span></div>
+                                    <div class="progress-line javascript"><span></span></div>
+                                </div>
+                                <div class="bar">
+                                    <i style="color:#b0bc1e" class='bx bxl-python'></i>
+                                    <div class="info"><span>Python</span></div>
+                                    <div class="progress-line python"><span></span></div>
+                                </div>
+                                <div class="bar">
+                                    <i style="color:#69bc69;" class='bx bxl-java'></i>
+                                    <div class="info"><span>Java</span></div>
+                                    <div class="progress-line java"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="Achievements">
+                    <p><a href="hackathon.jpg">Winner, ICE Hackathon- Beat the Kraken: Fair Plan Edition at T-Hub</a></p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="portfolio" id="project">
+            <div class="main-text">
+                <h2>Latest <span>Projects</span></h2>
+                <div class="portfolio-content" style="display: flex; justify-content: space-between; gap: 100px;">
+                    <div class="row" style="flex: 1; margin: 0 10px;">
+                        <img src="hotel.webp" alt="Hotel Management Project">
+                        <div class="layer">
+                            <h5>Hotel Management (C)</h5>
+                            <p>Developed a project in C that provides a menu for customers in a hotel, including food and accommodation, and allows participation in fun-filled games.</p>
+                            <a href="https://github.com/Vimaleshguptha/Hotel-Management" target="_blank"><i class='bx bx-link-external' style="color: rgb(231, 10, 10);"></i></a>
+                        </div>
+                    </div>
+                    <div class="row" style="flex: 1; margin: 0 10px;">
+                        <img src="ppt.webp" alt="PPT Controlling Project">
+                        <div class="layer">
+                            <h5>PPT Controlling Using Hand Gestures (Python)</h5>
+                            <p>Created a hand gesture-controlled PPT system using OpenCV, MediaPipe, and the Hand Tracking module.</p>
+                            <a href="https://github.com/Vimaleshguptha/PPT-Controlling-Using-Hand-Gesture" target="_blank"><i class='bx bx-link-external' style="color: rgb(231, 10, 10);"></i></a>
+                        </div>
+                    </div>
+                    <div class="row" style="flex: 1; margin: 0 10px;">
+                        <img src="train.jpg" alt="Train Accident Alerting System">
+                        <div class="layer">
+                            <h5>Train Accident Alerting System (IoT)</h5>
+                            <p>Developed a system using ultrasonic sensors and IoT integration for real-time obstacle detection and alerting to enhance railway safety.</p>
+                            <a href="https://github.com/Vimaleshguptha/Train-Accident-Alerting-System" target="_blank"><i class='bx bx-link-external' style="color: rgb(231, 10, 10);"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="contact animate-on-scroll" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work together!</h4>
+            <p>You can reach me at my email or phone number below, or connect with me on LinkedIn.</p>
+            <div class="contact-list">
+                <li><i class='bx bx-send bx-flip-vertical' style='color:#33d8e9'></i> gadamsettyvimalesh9@gmail.com</li>
+                <li><i class='bx bx-phone' style='color:#33d8e9'></i> 8019140704</li>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.linkedin.com/in/g-vimalesh-guptha"><i class='bx bxl-linkedin-alt'></i></a>
+                <a href="https://github.com/Vimaleshguptha"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="resume.pdf" download class="btn-box">Download CV</a>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="text" placeholder="Enter Your Subject">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>Developed by Vimalesh Guptha © 2024</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-circle'></i></a>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
